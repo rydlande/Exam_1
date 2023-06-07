@@ -1,0 +1,51 @@
+.getInTouch {
+    text-align: center;
+    font-weight: bold;
+    font-size: 24px;
+    margin: 16px;
+}
+.contactContainer {
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin: 32px;
+}
+.contactForm {
+    color: grey;
+    font-family: 'Open Sans';
+    font-size: 12px;
+    padding: 8px 16px;
+    margin: 8px 0 4px 0;
+    border-radius: 4px;
+    outline: none;
+    width: 300px;
+    border: 2px solid var(--main-bg-color-light);
+    box-shadow: rgba(60, 64, 67, 0.3) 0px 1px 2px 0px, rgba(60, 64, 67, 0.15) 0px 1px 3px 1px;
+}
+.contactForm:focus {
+    border: 2px solid var(--main-bg-color);
+}
+.contactQ {
+    margin: 32px 0 4px 0;
+    font-size: 16px;
+    font-weight: bolder;
+}
+.contactBtn {
+    width: 100px;
+    margin-top: 8px;
+    cursor: pointer;
+    border-style: none;
+    padding: 8px 5px;
+    background-color: var(--main-bg-color);
+    border-radius: 4px;
+    box-shadow: rgba(60, 64, 67, 0.3) 0px 1px 2px 0px, rgba(60, 64, 67, 0.15) 0px 1px 3px 1px;
+}
+.contactFalse {
+    font-family: 'Open Sans';
+    color: #C51C1C;
+    font-size: 12px;
+    font-style: italic;
+    margin-bottom: 12px;
+}

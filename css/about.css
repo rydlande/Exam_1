@@ -1,0 +1,83 @@
+.aboutHeading {
+    display: flex;
+    flex-direction: column;
+    text-align: right;
+    background-color: var(--main-bg-color-light);
+}
+.aboutLogo {
+    opacity: 80%;
+}
+.founder {
+    display: flex;
+    flex-direction: row;
+    justify-content: right;
+    margin: 0 20px 15px 0;
+}
+.founderInfo {
+    color: white;
+    padding: 15px 8px 0 0;
+}
+.founderName {
+    font-size: 21px;
+    font-weight: bolder;
+}
+.founderTitle {
+    font-size: 16px;
+    font-style: italic;
+}
+.founderImg {
+    height: 80px;
+    border-radius: 50%;
+}
+.aboutContent {
+    padding: 40px 40px 0 40px;
+}
+.aboutH4 {
+    font-size: 21px;
+    margin-bottom: 40px;
+}
+.aboutP {
+    font-size: 16px;
+    font-family: 'Open Sans';
+    font-weight: lighter;
+}
+.imgfitAbout {
+    width: 100vw;
+    object-fit: cover;
+}
+    /* TABLET */
+    @media (min-width: 481px) {
+        .aboutLogo {
+            max-height: 300px;
+            object-fit: contain;
+        }
+        .founder {
+            margin: -10px 30px 30px 0;
+        }
+        .aboutH4 {
+            font-size: 28px;
+            padding: 0 10%;
+        }
+        .aboutP {
+            font-size: 18px;
+            padding: 0 15%;
+        }
+        .imgfitAbout {
+            max-height: 270px;
+        }
+    }
+        /* DESKTOP */
+    @media (min-width: 1025px) {
+        .founder {
+            margin: -10px 50px 30px 0;
+        }
+        .aboutH4 {
+            font-size: 28px;
+        }
+        .aboutP {
+            font-size: 21px;
+        }
+        .imgfitAbout {
+            max-height: 330px;
+        }
+    }

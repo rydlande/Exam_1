@@ -1,0 +1,136 @@
+.featuredImg {
+    cursor: zoom-in;
+    width: 100vw;
+    height: 200px;
+    filter: brightness(70%);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    overflow: hidden;
+    margin-bottom: 8px;
+}
+#img {
+    display: block;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    pointer-events: none;       
+}
+.backButton {
+    margin-left: 8px;
+    font-size: 11px;
+    color: #8a8a8a;
+    text-decoration: none;
+}
+.backButton:hover {
+    color: var(--main-bg-color);
+}
+.blogContent {
+    padding: 10px 20px;
+}
+.blogTitle {
+    text-align: center;
+    font-size: 24px;
+}
+.blogText {
+    font-family: 'Open Sans';
+    font-size: 14px;
+    padding: 0 15px;
+}
+.publishedSpecific {
+    margin: 8px 0 30px 0;
+    text-align: center;
+    font-weight: lighter;
+    color: #8a8a8a;
+    font-size: 11px;
+}
+.modalImg {
+    width: 100%;
+}
+.modal {
+    position: fixed;
+    width: 300px;
+    height: 300px;
+    top: 40%;
+    left: 50%;
+    margin-top: -150px;
+    margin-left: -150px;
+    z-index: 2;
+}
+.overlay {
+    position: fixed;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.5);
+    backdrop-filter: blur(3px);
+    z-index: 1;
+}
+.hidden {
+    display: none;
+}
+    /* TABLET */
+    @media (min-width: 481px) {
+        .featuredImg {
+            height: 250px;
+        }
+        .backButton {
+            font-size: 15px;
+        }
+        .blogContent {
+            padding: 10px 30px;
+        }
+        .blogTitle {
+            font-size: 32px;
+        }
+        .blogText {
+            font-size: 16px;
+            padding: 0 10% 20px 10%;
+        }
+        .publishedSpecific {
+            margin: 12px 0 45px 0;
+            font-size: 13px;
+        }
+        .modal {
+            width: 400px;
+            height: 400px;
+            top: 45%;
+            margin-top: -200px;
+            margin-left: -200px;
+        }
+    }
+        /* DESKTOP */
+    @media (min-width: 1025px) {
+        .featuredImg {
+            height: 300px;
+            margin-bottom: 15px;
+        }
+        .backButton {
+            font-size: 18px;
+            margin-left: 15px;
+        }
+        .blogContent {
+            padding: 15px 40px;
+        }
+        .blogTitle {
+            font-size: 40px;
+        }
+        .blogText {
+            font-size: 18px;
+            padding: 0 18% 30px 18%;
+        }
+        .publishedSpecific {
+            margin: 15px 0 60px 0;
+            font-size: 16px;
+        }
+        .modal {
+            width: 550px;
+            height: 550px;
+            top: 50%;
+            margin-top: -275px;
+            margin-left: -275px;
+        }
+    }
